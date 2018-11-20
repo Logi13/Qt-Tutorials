@@ -19,12 +19,12 @@ Image {
 
     Image {
         id: wheel
+        anchors.centerIn: parent
+        source: "images/pinwheel.png"
         Behavior on rotation {
             NumberAnimation{
                 duration: 250
             }
         }
-        anchors.centerIn: parent
-        source: "images/pinwheel.png"
     }
 }
