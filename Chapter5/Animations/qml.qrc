@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>assets/background.png</file>
+        <file>assets/background@2x.png</file>
+        <file>assets/background_medium.png</file>
+        <file>assets/background_medium@2x.png</file>
+        <file>assets/box_blue.png</file>
+        <file>assets/box_blue@2x.png</file>
+        <file>assets/box_green.png</file>
+        <file>assets/box_green@2x.png</file>
+        <file>assets/box_red.png</file>
+        <file>assets/box_red@2x.png</file>
+        <file>assets/planet.png</file>
+        <file>assets/rocket.png</file>
+        <file>assets/rocket2.png</file>
+        <file>assets/soccer_ball.png</file>
+        <file>assets/soccer_shadow.png</file>
+        <file>assets/ufo.png</file>
+        <file>assets/ufo_background.png</file>
+        <file>main.cpp</file>
+    </qresource>
+</RCC>
