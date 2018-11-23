@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>main.cpp</file>
+        <file>Box.qml</file>
+        <file>EasingType.qml</file>
+        <file>blueprint.jpg</file>
+    </qresource>
+</RCC>
