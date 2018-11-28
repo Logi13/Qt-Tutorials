@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>remote.qml</file>
+        <file>main.qml</file>
+        <file>Thumbnail.qml</file>
+    </qresource>
+</RCC>
