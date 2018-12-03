@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-11-24T12:45:36
+# Project created by QtCreator 2018-11-30T21:16:30
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Gui
+TARGET = Test
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -27,15 +27,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-        mydialog.cpp
+    mydialog.cpp
 
 HEADERS += \
         mainwindow.h \
-        mydialog.h
+    mydialog.h
 
 FORMS += \
         mainwindow.ui \
-        mydialog.ui
+    mydialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
