@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Analog.qml</file>
+        <file>Digital.qml</file>
+        <file>ss-analog.qml</file>
+        <file>ss-digital.qml</file>
+    </qresource>
+</RCC>
