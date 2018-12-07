@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-12-06T19:18:37
+# Project created by QtCreator 2018-12-06T16:39:12
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Sheet
+TARGET = TestSheet
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -26,10 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    main.cpp \
+    mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    mainwindow.h
 
 FORMS += \
         mainwindow.ui
@@ -40,4 +43,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    Data/classes.db
+    classes.db \
+    assets/classes.db \
+    assets/Picture.png
