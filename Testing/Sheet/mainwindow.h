@@ -21,9 +21,10 @@ public:
         mydb.removeDatabase(QSqlDatabase::defaultConnection);
     }
     bool connOpen(){
+        // The database path
         mydb = QSqlDatabase::addDatabase("QSQLITE");
         mydb.setDatabaseName("C:/Users/johnn/Documents/Qt-Tutorials/Testing/Sheet/Data/classes.db");
-
+        //qDebug message if the database is open or closed upon connection
         if(!mydb.open()){
             qDebug() << ("Failed to open the database");
             return false;
