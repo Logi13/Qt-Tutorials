@@ -3,7 +3,9 @@
 #include <QFile>
 #include <QDir>
 #include <QTextStream>
+#include <QDataStream>
 #include <QDebug>
+#include <QtTest/QTest>
 
 int main(int argc, char *argv[])
 {
@@ -23,6 +25,16 @@ int main(int argc, char *argv[])
     QTextStream stream(&file);
     //write message to file via the text stream
     stream << message;
+
+    QStringList data({"a", "b", "c"});
+    {
+         //write binary files
+        QFile file("out.bin");
+        if(file.open(QIODevice::WriteOnly)) {
+            QDataStream out(&file);
+            out << data;
+        }
+    }
     //we do not start the eventloop as this would wait for external IO
     //app.exec();
 

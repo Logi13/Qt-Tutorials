@@ -81,6 +81,7 @@ void MainWindow::on_pushButton_tableLoad_clicked()
 // Database access based on combobox without password or username
 void MainWindow::on_comboBox_currentIndexChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1);
     QString cl = ui->comboBox->currentText();
 
     if (cl == "Fighter"){
