@@ -10,14 +10,16 @@ MainWindow::MainWindow(QWidget *parent) :
     QPixmap pix("C:/Users/johnn/Documents/Qt-Tutorials/Testing/Sheet/Picture.png");
     ui->label_pic->setPixmap(pix);
     // Changes the label depending the connection to the db
-    if(!connOpen())
+    if(!connOpen()){
         ui->label->setText("Failed to open the database");
-    else
+    } else {
         ui->label->setText("Connected....");
+    }
 }
 
 MainWindow::~MainWindow()
 {
+    //close the connection...
     delete ui;
 }
 

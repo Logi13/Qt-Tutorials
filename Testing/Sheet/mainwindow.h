@@ -34,6 +34,7 @@ public:
             return true;
         }
     }
+
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
