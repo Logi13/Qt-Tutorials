@@ -5,7 +5,6 @@
 
 class FileIO : public QObject
 {
-
     Q_OBJECT
     Q_DISABLE_COPY(FileIO)
     Q_PROPERTY(QUrl source READ source WRITE setSource NOTIFY sourceChanged)
@@ -30,3 +29,4 @@ private:
 };
 
 #endif // FILEIO_H
+

@@ -1,15 +1,16 @@
 #include "fileio.h"
 
-FileIO::FileIO(QObject *parent) : QObject(parent)
+FileIO::FileIO(QObject *parent)
+    : QObject(parent)
 {
-
 }
 
-FileIO::~FileIO(){
-
+FileIO::~FileIO()
+{
 }
 
-void FileIO::read() {
+void FileIO::read()
+{
     if(m_source.isEmpty()) {
         return;
     }
@@ -25,7 +26,8 @@ void FileIO::read() {
     }
 }
 
-void FileIO::write() {
+void FileIO::write()
+{
     if(m_source.isEmpty()) {
         return;
     }
@@ -36,28 +38,31 @@ void FileIO::write() {
     }
 }
 
-QUrl FileIO::source() const {
+QUrl FileIO::source() const
+{
     return m_source;
 }
 
-QString FileIO::text() const {
+QString FileIO::text() const
+{
     return m_text;
 }
 
-void FileIO::setSource(QUrl source) {
-    if(m_source == source) {
+void FileIO::setSource(QUrl source)
+{
+    if (m_source == source)
         return;
-    }
 
     m_source = source;
     emit sourceChanged(source);
 }
 
-void FileIO::setText(QString text) {
-    if(m_text == text) {
+void FileIO::setText(QString text)
+{
+    if (m_text == text)
         return;
-    }
 
     m_text = text;
     emit textChanged(text);
 }
+
