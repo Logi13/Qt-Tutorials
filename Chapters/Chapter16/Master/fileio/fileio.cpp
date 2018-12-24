@@ -16,7 +16,7 @@ void FileIO::read()
     }
     QFile file(m_source.toLocalFile());
     if(!file.exists()) {
-        qWarning() << "Does not exits: " << m_source.toLocalFile();
+        qWarning() << "Does not exist: " << m_source.toLocalFile();
         return;
     }
     if(file.open(QIODevice::ReadOnly)) {
